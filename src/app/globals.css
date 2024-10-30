@@ -2,20 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  scroll-behavior: smooth
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+
+  .container {
+    @apply mx-auto max-w-7xl px-[2rem]
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .btn {
+    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex justify-center tracking-tight;
+  }
+
+  .btn-primary {
+    @apply bg-[#86ad7d] hover:bg-opacity-75 transition-colors duration-150 text-white
+  }
+
+  .btn-text {
+    @apply text-black bg-transparent
+  }
+
+  .logo-ticker-image {
+    @apply h-8 w-auto;
+  }
+
+  .tag {
+    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight
+  }
+
+  .section-title {
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text
+  }
+
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E]
+  }
+
+  .section-main-heading {
+    @apply text-2xl md:text-5xl tracking-tight font-bold uppercase text-white
+  }
+
+  .section-heading {
+    @apply text-base md:text-2xl text-white uppercase tracking-tight font-medium
+  }
+
+  .card {
+    @apply p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full
+  }
+
+  .input { 
+    @apply flex-shrink appearance-none h-12 px-4 text-base leading-6 rounded-sm border border-transparent
+  }
 }
