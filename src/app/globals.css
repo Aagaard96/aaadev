@@ -8,12 +8,12 @@ html {
 
 @layer components {
 
-  .container {
+  .sectionContainer {
     @apply mx-auto max-w-7xl px-[2rem]
   }
 
   .btn {
-    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex justify-center tracking-tight;
+    @apply bg-black text-white px-4 py-2 rounded-sm font-medium inline-flex justify-center tracking-tight;
   }
 
   .btn-primary {
@@ -24,35 +24,31 @@ html {
     @apply text-black bg-transparent
   }
 
-  .logo-ticker-image {
-    @apply h-8 w-auto;
+  .headingContainer {
+    @apply text-center mb-10 md:max-w-2xl mx-auto
   }
 
-  .tag {
-    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight
+  .sectionHeading {
+    @apply text-base md:text-2xl text-[#86ad7d] uppercase tracking-tight font-medium
   }
 
-  .section-title {
-    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text
+  .sectionDescription {
+    @apply text-4xl tracking-tight font-bold uppercase text-neutral
   }
 
-  .section-description {
-    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E]
+  .p-heading {
+    @apply text-3xl tracking-tight font-medium
   }
 
-  .section-main-heading {
-    @apply text-2xl md:text-5xl tracking-tight font-bold uppercase text-white
+  .textCtn {
+    @apply space-y-4 leading-relaxed text-neutral lg:text-lg text-pretty
   }
 
-  .section-heading {
-    @apply text-base md:text-2xl text-white uppercase tracking-tight font-medium
+  .imgBorder {
+    @apply border-2 border-[#86ad7d] rounded-sm
   }
 
-  .card {
-    @apply p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full
-  }
-
-  .input { 
+  .input {
     @apply flex-shrink appearance-none h-12 px-4 text-base leading-6 rounded-sm border border-transparent
   }
 }

@@ -33,8 +33,12 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="relative py-32 overflow-hidden">
-            <div className="max-w-5xl mx-auto relative border-2 border-neutral-300 rounded-lg flex flex-col items-center py-5">
+        <section id="projects" className="relative pt-32 overflow-hidden">
+            <div className="headingContainer">
+                <h2 className="sectionHeading">projects</h2>
+                <h3 className="sectionDescription">Find my latest projects here</h3>
+            </div>
+            <div className="max-w-5xl mx-auto relative border-2 border-neutral rounded-sm flex flex-col items-center py-5">
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}

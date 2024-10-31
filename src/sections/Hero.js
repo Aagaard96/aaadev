@@ -25,17 +25,17 @@ export default function Hero() {
     return (
         <section
             ref={heroRef}
-            className="pt-8 pb-20 md:pt-5 md:pb-10 overflow-x-clip border-b border-b-white"
+            className="pt-8 pb-20 md:pt-5 md:pb-10 overflow-x-clip border-b border-b-white h-screen"
         >
-            <div className="container">
+            <div className="sectionContainer">
                 <div className="md:flex items-center">
                     <div className="md:w-[478px] lg:w-[700px]">
-                        {/* <h1 className="text-5xl md:text-7xl xl:text-9xl font-bold tracking-tighter bg-gradient-to-b from-neutral-300 to-[#86ad7d] text-transparent bg-clip-text mt-6">
+                        {/* <h1 className="text-5xl md:text-7xl xl:text-9xl font-bold tracking-tighter bg-gradient-to-b from-neutral to-[#86ad7d] text-transparent bg-clip-text mt-6">
                             Porte Folio <br /> AAA DEV.
                         </h1> */}
-                        <Example/>
+                        <Example />
                         <div className="flex gap-1 items-center mt-[30px]">
-                            <Link href="#projects" className="btn btn-primary flex gap-1 items-center">
+                            <Link href="#projects" className="btn flex gap-1 items-center">
                                 Start looking <FaArrowDown className="h-5 w-5" />
                             </Link>
                         </div>

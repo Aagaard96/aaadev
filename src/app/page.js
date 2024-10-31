@@ -1,4 +1,5 @@
 import Example from "@/components/typewriter";
+import About from "@/sections/About";
 import Contact from "@/sections/Contact";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
     <Hero/>
     <Projects/>
     <Resume/>
+    <About/>
     <Contact/>
    </main>
   );
