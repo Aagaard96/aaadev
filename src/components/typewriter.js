@@ -40,8 +40,8 @@ const Typewrite = ({ examples }) => {
     }, [examples.length]);
 
     return (
-        <p className="mb-2.5 text-sm font-light uppercase">
-            <span className="text-6xl text-white tracking-tight font-semibold">
+        <p className="mb-2.5 text-sm font-light uppercase text-center md:text-start">
+            <span className="text-3xl md:text-4xl xl:text-6xl text-white tracking-tight font-semibold">
                 {examples[exampleIndex].split(" ").map((word, wordIndex) => (
                     <span key={`${exampleIndex}-${wordIndex}`} className="mr-2 inline-block">
                         {word.split("").map((letter, letterIndex) => (
@@ -53,7 +53,7 @@ const Typewrite = ({ examples }) => {
                                     duration: 0,
                                 }}
                                 key={`${exampleIndex}-${wordIndex}-${letterIndex}`}
-                                className="relative z-50"
+                                className="relative z-20"
                             >
                                 <motion.span
                                     initial={{ opacity: 0 }}

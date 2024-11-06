@@ -38,7 +38,7 @@ export default function Projects() {
                 <h2 className="sectionHeading">projects</h2>
                 <h3 className="sectionDescription">Find my latest projects here</h3>
             </div>
-            <div className="max-w-5xl mx-auto relative border-2 border-neutral rounded-sm flex flex-col items-center py-5">
+            <div className="max-w-5xl mx-auto relative border-2 border-neutral px-5 lg:px-0 rounded-sm flex flex-col items-center py-5">
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}

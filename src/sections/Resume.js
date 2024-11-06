@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
+import Link from "next/link";
+import { CgExternal } from "react-icons/cg";
 
 export default function Resume() {
     const [isEnglish, setIsEnglish] = useState(true); // Track language state
@@ -25,27 +27,31 @@ export default function Resume() {
                     You can find it here, <br /> both in English and Danish
                 </motion.h3>
             </motion.div>
-            <div className="flex justify-center space-x-10 relative">
-                    <div
-                        className="rounded-sm h-fit w-[500px]">
-                        {isEnglish ? (
-                            <Image
-                                src="/cv.webp"
-                                alt="resume in English"
-                                width={500}
-                                height={250}
-                                className="rounded-sm shadow-lg object-contain"
-                            />
-                        ) : (
-                            <Image
-                                src="/cv-dark.webp"
-                                alt="resume in Danish"
-                                width={500}
-                                height={250}
-                                className="rounded-sm shadow-lg object-contain"
-                            />
-                        )}
-                    </div>
+
+            <div className="flex justify-center relative">
+                <button onClick={handleToggle} className="btn absolute left-0">{isEnglish ? "English" : "Danish"}</button>
+                <div
+                    className="rounded-sm h-fit w-[500px] pt-10">
+                    {isEnglish ? (
+                        <Image
+                            src="/cv.webp"
+                            alt="resume in English"
+                            width={500}
+                            height={250}
+                            className="rounded-sm shadow-lg object-contain"
+                        />
+                    ) : (
+                        <Image
+                            src="/cv-dark.webp"
+                            alt="resume in Danish"
+                            width={500}
+                            height={250}
+                            className="rounded-sm shadow-lg object-contain"
+                        />
+                    )}
+                </div>
+
+
                 {/* 
                 <motion.div
                     className="absolute w-40 h-40 bg-gray-800 rounded-sm imgBorder top-[10%] right-[80%] -z-20"
@@ -88,9 +94,9 @@ export default function Resume() {
                         x: { duration: 2, ease: "easeInOut" }, // Smooth transition for horizontal movement
                     }}
                 /> */}
-                <button onClick={handleToggle} className="btn absolute left-[75%] top-[50%]">{isEnglish ? "English" : "Danish"}</button>
-            </div>
 
+            </div>
+            <Link className="btn btn-primary" target="_blanc" href="https://rxresu.me/aagaardandreas1/cv-andreas">Or find it here <CgExternal className="h-5 w-5" /></Link>
         </section>
     );
 }

@@ -8,8 +8,8 @@ import { CgExternal } from "react-icons/cg";
 export default function ProjectCard({ title, description, occupation, img, position, link }) {
     return (
         <div
-            className={`w-[800px] h-[250px] p-8 bg-gray-800 shadow-[0_7px_18px_#000] mb-6 rounded-sm text-white flex gap-10 group
-                ${position === 'left' ? 'ml-auto transform -translate-x-[35%]' : 'mr-auto transform translate-x-[35%]'}
+            className={`max-w-[800px]  p-8 bg-gray-800 shadow-[0_7px_18px_#000] mb-6 rounded-sm text-white flex flex-col md:flex-row gap-10 group
+                ${position === 'left' ? 'ml-auto xl:transform xl:-translate-x-[35%]' : 'mr-auto xl:transform xl:translate-x-[35%]'}
             `}
         >
             {position === 'left' ? (
@@ -21,7 +21,7 @@ export default function ProjectCard({ title, description, occupation, img, posit
                             <p className="font-medium text-lg">{occupation}</p>
                             <p className="text-sm">{description}</p>
                         </div>
-                        <Link className="btn w-fit flex items-center gap-2 uppercase" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
+                        <Link className="btn w-fit flex items-center gap-2" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
                     </div>
                     {/* Image on the right */}
                     <motion.div
@@ -37,7 +37,7 @@ export default function ProjectCard({ title, description, occupation, img, posit
                         }}
                         viewport={{ once: true }}
                         className="relative flex-1 group-hover:scale-105 duration-300">
-                        <Image src={img} fill alt={title} className="object-cover rounded-sm border border-neutral shadow-[0_7px_14px_#000] " />
+                      <Image src={img} height="600" width="600" alt={title} className="object-cover w-full rounded-sm border border-neutral shadow-[0_7px_14px_#000] " />
                     </motion.div>
 
                 </>
@@ -57,7 +57,7 @@ export default function ProjectCard({ title, description, occupation, img, posit
                         }}
                         viewport={{ once: true }}
                         className="relative flex-1 group-hover:scale-105 duration-300">
-                        <Image src={img} fill alt={title} className="object-cover rounded-sm border border-neutral shadow-[0_7px_14px_#000] " />
+                        <Image src={img} height="600" width="600" alt={title} className="object-cover w-full rounded-sm border border-neutral shadow-[0_7px_14px_#000] " />
                     </motion.div>
                     {/* Text on the right */}
                     <div className="flex-1 text-right flex justify-center flex-col">
@@ -66,7 +66,7 @@ export default function ProjectCard({ title, description, occupation, img, posit
                             <p className="font-medium text-lg">{occupation}</p>
                             <p className="text-sm">{description}</p>
                         </div>
-                        <Link className="btn w-fit self-end flex items-center gap-2 uppercase" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
+                        <Link className="btn w-fit self-end flex items-center gap-2" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
                     </div>
                 </>
             )}

@@ -13,7 +13,7 @@ html {
   }
 
   .btn {
-    @apply bg-black text-white px-4 py-2 rounded-sm font-medium inline-flex justify-center tracking-tight;
+    @apply bg-black text-white px-4 py-2 rounded-sm font-medium inline-flex justify-center items-center tracking-tight uppercase;
   }
 
   .btn-primary {
@@ -25,7 +25,7 @@ html {
   }
 
   .headingContainer {
-    @apply text-center mb-10 md:max-w-2xl mx-auto
+    @apply text-center mb-10 md:max-w-2xl mx-auto px-5 sm:px-0
   }
 
   .sectionHeading {
@@ -33,7 +33,7 @@ html {
   }
 
   .sectionDescription {
-    @apply text-4xl tracking-tight font-bold uppercase text-neutral
+    @apply text-2xl md:text-4xl tracking-tight font-bold uppercase text-neutral
   }
 
   .p-heading {
