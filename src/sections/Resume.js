@@ -51,50 +51,6 @@ export default function Resume() {
                     )}
                 </div>
 
-
-                {/* 
-                <motion.div
-                    className="absolute w-40 h-40 bg-gray-800 rounded-sm imgBorder top-[10%] right-[80%] -z-20"
-                    style={{ scale }}
-                >
-                </motion.div>
-                <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    transition={{
-                        type: "tween",
-                        stiffness: 260,
-                        damping: 20,
-                        delay: 1.5,
-                        repeat: Infinity,
-                        repeatType: "mirror",
-                        duration: 8
-
-                    }}
-                    className="absolute h-[200px] w-[200px] bg-gray-800 rounded-full imgBorder top-[35%] left-[75%] -z-20"
-                    viewport={{ once: true }}
-                ></motion.div>
-                <motion.div
-                    className="absolute h-[75px] w-[75px] bg-gray-800 imgBorder top-[75%] right-[85%] -z-20"
-                    style={{ y: translateY }}
-                    initial={{
-                        backgroundColor: "#fff",
-                    }}
-                    animate={{
-                        y: [-30, 30], // Subtle up and down movement
-                        rotate: [0, 360], // Full rotation for a rolling effect
-                    }}
-                    whileInView={{
-                        x: 100, // Moves 100px to the right when in view
-                        backgroundColor: "#215864", // Changes color when in view
-                    }}
-                    transition={{
-                        y: { duration: 4, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" },
-                        rotate: { duration: 4, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" },
-                        x: { duration: 2, ease: "easeInOut" }, // Smooth transition for horizontal movement
-                    }}
-                /> */}
-
             </div>
             <Link className="btn btn-primary" target="_blanc" href="https://rxresu.me/aagaardandreas1/cv-andreas">Or find it here <CgExternal className="h-5 w-5" /></Link>
         </section>

@@ -9,6 +9,13 @@ const projects = [
         link: "https://hairbysonne.dk"
     },
     {
+        title: "Chinese Eatery",
+        description: "Pellentesque tempus in lorem eu mollis. Phasellus placerat massa ipsum, at molestie purus commodo nec. Ut in mi felis...",
+        occupation: "Chinese Restaurant",
+        img: "/chinese-eatery.png",
+        link: "https://chineseeatery.netlify.app/"
+    },
+    {
         title: "Sonne Body & Balance",
         description: "Pellentesque tempus in lorem eu mollis. Phasellus placerat massa ipsum, at molestie purus commodo nec. Ut in mi felis...",
         occupation: "Body Therapist",

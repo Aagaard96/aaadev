@@ -11,7 +11,7 @@ export default function About() {
 
             <div className="flex flex-col lg:flex-row gap-10 justify-center items-center">
                 {/* Main content with flex-2 to take 66% width on large screens */}
-                <div className="lg:flex-2 space-y-2 text-lg text-balance text-neutral-200">
+                <div className="lg:flex-2 space-y-2 text-lg text-balance text-neutral-200 flex-1">
                     <div className="flex gap-5 font-semibold text-xl text-neutral">
                         <div>
                             <p>Name:</p>
@@ -26,31 +26,21 @@ export default function About() {
                     </div>
                     <div className="textCtn">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                            laudantium quia fuga cum enim consequuntur soluta hic. At, debitis
-                            veniam.
+                            I’m a newly graduated Front-end Developer with a passion for creating clean, user-friendly websites. I’ve always been interested in how websites work, and as I began learning web development, I realized that I really enjoy putting together both the technical and creative parts of building a site. In my spare time, I like to take on personal projects, which helps me continue learning and exploring new technologies. I also enjoy helping others create the visual identity they want for their businesses or ideas.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-                            illo inventore pariatur nulla exercitationem eaque odio delectus,
-                            nihil eos debitis, eius libero tempore explicabo numquam magni
-                            consectetur aliquid dolorum non ea quis quasi? Laborum, vel?
+                            Over the last few years, I’ve faced some challenges and uncertainty, but once I started studying web development, everything started to make sense. It was like finding something that clicked for me, and now I’m always thinking about new ideas for projects or ways to improve my skills. I really enjoy learning and pushing myself to get better at what I do.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                            reiciendis explicabo nostrum officia. Cum, iure quis?
+                            Outside of development, I enjoy keeping a balance by doing things I love, like cooking and trying out new restaurants. I also like to stay active by playing football and attending sports events. These activities help me stay energized and give me a chance to step away from the screen for a bit.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-                            illo inventore pariatur nulla exercitationem eaque odio delectus,
-                            nihil eos debitis, eius libero tempore explicabo numquam magni
-                            consectetur aliquid dolorum non ea quis quasi? Laborum, vel?
+                            As I continue to grow in this field, I’m looking forward to taking on new challenges and learning even more. My goal is to work on projects that help others and make a difference, while always improving my own skills along the way.
                         </p>
                     </div>
                 </div>
 
-                {/* Image container with flex-1 to take 33% width on large screens */}
-                <div className="relative h-[400px] w-full sm:w-3/5 ">
+                <div className="relative h-[450px] md:h-[700px] w-full sm:w-3/5 lg:flex-1">
                     <Image
                         src="/cv_profile.png"
                         fill

@@ -21,7 +21,7 @@ export default function ProjectCard({ title, description, occupation, img, posit
                             <p className="font-medium text-lg">{occupation}</p>
                             <p className="text-sm">{description}</p>
                         </div>
-                        <Link className="btn w-fit flex items-center gap-2" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
+                        <Link target="_blank" className="btn w-fit flex items-center gap-2" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
                     </div>
                     {/* Image on the right */}
                     <motion.div
@@ -37,7 +37,7 @@ export default function ProjectCard({ title, description, occupation, img, posit
                         }}
                         viewport={{ once: true }}
                         className="relative flex-1 group-hover:scale-105 duration-300">
-                      <Image src={img} height="600" width="600" alt={title} className="object-cover w-full rounded-sm border border-neutral shadow-[0_7px_14px_#000] " />
+                        <Image src={img} height="600" width="600" alt={title} className="object-cover w-full rounded-sm border border-neutral shadow-[0_7px_14px_#000] " />
                     </motion.div>
 
                 </>
@@ -66,7 +66,7 @@ export default function ProjectCard({ title, description, occupation, img, posit
                             <p className="font-medium text-lg">{occupation}</p>
                             <p className="text-sm">{description}</p>
                         </div>
-                        <Link className="btn w-fit self-end flex items-center gap-2" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
+                        <Link target="_blank" className="btn w-fit self-end flex items-center gap-2" href={link}>Show me <CgExternal className="h-5 w-5" /></Link>
                     </div>
                 </>
             )}
