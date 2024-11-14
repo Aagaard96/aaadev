@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Example() {
     return (
-        <div className="h-[200px] flex items-center justify-center">
+        <div className="h-[200px] flex items-center justify-center md:justify-start">
             <BlockInTextCard
                 examples={[
                     "Welcome!",
@@ -41,7 +41,7 @@ const Typewrite = ({ examples }) => {
 
     return (
         <p className="mb-2.5 text-sm font-light uppercase text-center md:text-start">
-            <span className="text-3xl md:text-4xl xl:text-6xl text-white tracking-tight font-semibold ">
+            <span className="text-3xl md:text-4xl xl:text-6xl text-neutral tracking-tight font-semibold ">
                 {examples[exampleIndex].split(" ").map((word, wordIndex) => (
                     <span key={`${exampleIndex}-${wordIndex}`} className="mr-2 inline-block">
                         {word.split("").map((letter, letterIndex) => (

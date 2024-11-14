@@ -27,7 +27,7 @@ export default function Hero() {
             ref={heroRef}
             className="pt-8 pb-20 md:pt-5 md:pb-10 overflow-x-clip border-b border-b-white"
         >
-            <div className="sectionContainer">
+            <div className="container">
                 <div className="flex flex-col justify-center md:flex-row items-center h-screen ">
                     <div className="w-[300px] md:w-[478px] lg:w-[700px]">
                         <Example />
