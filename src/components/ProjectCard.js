@@ -25,25 +25,29 @@ export default function ProjectCard({ title, description, occupation, img, posit
                     </div>
                     {/* Image on the right */}
                     <motion.div
-                          initial={{ opacity: 0 }}
-                          whileInView={{ opacity: 1 }}
-                          transition={{ delay: 0.75, }}
-                          viewport={{ once: true }}
-                        className="project-img-ctn">
-                        <Image src={img} height="600" width="600" alt={title} className="project-img " />
+                        initial={{ opacity: 0, }}
+                        whileInView={{ opacity: 1, }}
+                        transition={{
+                            duration: 0.75,
+                        }}
+                        viewport={{ once: true, amount: 0.75 }}
+                        className="project-img-ctn"
+                    >
+                        <Image src={img} priority height="600" width="600" alt={title} className="project-img" />
                     </motion.div>
-
                 </>
             ) : (
                 <>
                     {/* Image on the left */}
                     <motion.div
-                        initial={{ opacity: 0 }}
+                        initial={{ opacity: 0, }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.75, }}
-                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.75,
+                        }}
+                        viewport={{ once: true, amount: 0.75 }}
                         className="project-img-ctn">
-                        <Image src={img} height="600" width="600" alt={title} className="project-img" />
+                        <Image src={img} priority height="600" width="600" alt={title} className="project-img" />
                     </motion.div>
                     {/* Text on the right */}
                     <div className="project-info-ctn text-end">

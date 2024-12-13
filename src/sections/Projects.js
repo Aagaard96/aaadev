@@ -5,11 +5,25 @@ import { useRef } from "react";
 
 const projects = [
     {
+        title: "PaaTur",
+        description: "This project involves creating a website for a tour guide specializing in team-building adventures for groups and companies across the country. The site will showcase available tours, pricing, and all essential information customers need to plan their experience.",
+        occupation: "Guided Outdoor Experiences",
+        img: "/paatur.png",
+        link: "https://paatur.dk"
+    },
+    {
         title: "UNAI",
         description: "This is a mockup for a Fine Dining restaurant, created as part of my portfolio using React, Next.js, and Framer Motion.",
         occupation: "Restaurant",
         img: "/unai.png",
         link: "https://unairestaurant.netlify.app/"
+    },
+    {
+        title: "Leloh Lab.",
+        description: "Leloh Lab is a live and functional Shopify webshop.",
+        occupation: "Webshop",
+        img: "/leloh.png",
+        link: "https://lelohlab.com/"
     },
     {
         title: "Lost Hut",
@@ -39,13 +53,7 @@ const projects = [
         img: "/sonnebb.png",
         link: "https://sonnebb.netlify.app"
     },
-    {
-        title: "PaaTur - Ongoing",
-        description: "This project involves creating a website for a tour guide specializing in team-building adventures for groups and companies across the country. The site will showcase available tours, pricing, and all essential information customers need to plan their experience.",
-        occupation: "Guided Outdoor Experiences",
-        img: "/paatur.png",
-        link: "https://mppaatur.netlify.app"
-    },
+
     // {
     //     title: "WILLUM.",
     //     description: "Pellentesque tempus in lorem eu mollis. Phasellus placerat massa ipsum, at molestie purus commodo nec...",

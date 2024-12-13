@@ -12,13 +12,13 @@ html {
   @apply mx-auto max-w-7xl px-[2rem];
 }
 
-/* NAVIGATION */ 
+/* NAVIGATION */
 .link {
-  @apply font-bold
+  @apply font-bold;
 }
 
 .link-hover {
-  @apply hover:text-accentGreen transition-colors
+  @apply hover:text-accentGreen transition-colors;
 }
 
 /* HEADINGS */
@@ -64,7 +64,7 @@ html {
 }
 
 .project-img-ctn {
-  @apply flex-1 flex items-center group-hover:scale-105 duration-300;
+  @apply flex-1 flex items-center;
 }
 
 .project-img {
@@ -72,16 +72,8 @@ html {
 }
 
 .project-btn-link {
-  @apply flex items-center gap-2;
+  @apply flex items-center gap-2 group-hover:scale-105 duration-300 transition-transform hover:bg-accentGreen/50;
 }
-
-
-
-
-
-
-
-
 
 .textCtn {
   @apply space-y-4 text-base leading-relaxed text-neutral lg:text-lg text-pretty;

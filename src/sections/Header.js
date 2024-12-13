@@ -42,7 +42,7 @@ export default function Header() {
                             alt="AAA Logo"
                             height={80}
                             width={80}
-                            className="invert"
+                            className="invert h-[50px] sm:h-[65px] lg:h-[80px]"
                         />
                     </Link>
                     <button

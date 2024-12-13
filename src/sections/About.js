@@ -44,6 +44,7 @@ export default function About() {
                     <Image
                         src="/cv_profile.png"
                         fill
+                        priority
                         className="rounded-lg border-accentGreen border-2 object-cover"
                         alt="Responsive Image"
                     />

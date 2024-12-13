@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={twMerge(dmSans.className, "antialiased bg-gradient-to-br from-gray-800 to-black")}>
+      <body className={twMerge(dmSans.className, "antialiased ")}>
         {children}
       </body>
     </html>
