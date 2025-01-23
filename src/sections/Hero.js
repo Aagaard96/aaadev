@@ -24,6 +24,7 @@ export default function Hero() {
 
     return (
         <section
+            id="welcome"
             ref={heroRef}
             className="pt-8 pb-20 md:pt-5 md:pb-10 overflow-x-clip border-b border-b-white"
         >
@@ -38,7 +39,7 @@ export default function Hero() {
                             }}
                             transition={{ delay: 7, duration: 2 }}
                             className="flex gap-1 items-center justify-center md:justify-start mt-[30px]">
-                            <Link href="#projects" className="btn flex gap-1 items-center">
+                            <Link href="#projects" className="btn hover:text-accentGreen transition-colors duration-300 flex gap-1 items-center">
                                 Start looking <FaArrowDown className="h-5 w-5" />
                             </Link>
                         </motion.div>

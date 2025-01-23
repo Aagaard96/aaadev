@@ -13,7 +13,7 @@ export default function About() {
                 {/* Main content with flex-2 to take 66% width on large screens */}
                 <div className="lg:flex-2 space-y-2 text-balance text-neutral-200 flex-1">
                     <div className="flex gap-5 text-lg font-semibold text-neutral">
-                        <div>
+                        <div className="text-accentGreen">
                             <p>Name:</p>
                             <p>Age:</p>
                             <p>Location:</p>

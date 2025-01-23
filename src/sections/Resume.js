@@ -17,7 +17,7 @@ export default function Resume() {
     return (
         <section id="resume" className="text-neutral pt-32 relative">
             <ShadowAnimation
-                className="absolute left-1/2 top-1/2 translate-x-1/2 transform -z-10"
+                className="absolute left-1/2 top-1/2 translate-x-1/2 transform"
                 color="#22c55eff"
                 blur="600px"
                 spread="200px"

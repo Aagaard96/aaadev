@@ -42,7 +42,7 @@ html {
 }
 
 .btn-primary {
-  @apply bg-accentGreen hover:bg-opacity-75 transition-colors duration-150 text-neutral;
+  @apply bg-accentGreen hover:bg-opacity-75 transition-colors duration-150 text-black;
 }
 
 /* PROJECTS */
@@ -52,7 +52,7 @@ html {
 }
 
 .project-title {
-  @apply font-extrabold text-2xl;
+  @apply font-extrabold text-2xl text-emerald-200;
 }
 
 .project-occupation {
@@ -68,11 +68,11 @@ html {
 }
 
 .project-img {
-  @apply object-cover w-full rounded-sm border border-neutral shadow-[0_7px_14px_#000];
+  @apply object-cover w-full rounded-sm border border-accentGreen shadow-[0_7px_14px_#000];
 }
 
 .project-btn-link {
-  @apply flex items-center gap-2 group-hover:scale-105 duration-300 transition-transform hover:bg-accentGreen/50;
+  @apply flex items-center gap-2 group-hover:scale-105 duration-300 transition-all hover:bg-accentGreen/50;
 }
 
 .textCtn {

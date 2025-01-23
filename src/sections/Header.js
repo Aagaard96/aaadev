@@ -33,7 +33,7 @@ export default function Header() {
         };
     }, [dropdownRef]);
     return (
-        <header className="z-50 py-5 backdrop-blur-sm fixed w-full">
+        <header className="z-50 py-5 backdrop-blur-sm bg-gradient-to-b from-accentGreen/20 to-black/5 fixed w-full">
             <div className="container">
                 <div className="flex items-center justify-between">
                     <Link href="/">
